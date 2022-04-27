@@ -5,4 +5,13 @@ let sum = (num1, num2) => {
     return total;
 };
 
-console.log(sum(arg[0], arg[1]));
+let diceRoller = function (rolls) {
+   let rollArray = [];
+   for(let i = 1; i <= rolls; i++) {
+      rollArray.push(Math.floor(Math.random() * 6) + 1)
+ }
+    return rollArray.join();
+}
+console.log(diceRoller(arg))
+//console.log(sum(arg[0], arg[1]));
+
